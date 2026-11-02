@@ -115,20 +115,23 @@
     {userCanManage}
 />
 
+<!-- svelte-ignore a11y_no_noninteractive_tabindex (Only tile buttons receive tabindex; compact rows are groups.) -->
 <div
     class={[
+        !isTileView && "compact-wish-card",
         "card preset-filled-surface-100-900 inset-ring-surface-200-800 block h-full w-full text-start inset-ring print:break-inside-avoid print:shadow-none",
         !item.approved && "preset-tonal-warning inset-ring-warning-500 inset-ring",
         !reorderActions && "card-hover"
     ]}
     aria-labelledby={`${id}-name`}
     onclick={() => {
-        if (!reorderActions) launchDrawer();
+        if (isTileView && !reorderActions) launchDrawer();
     }}
     onkeyup={(e) => {
-        if (!reorderActions && e.key === "Enter") launchDrawer();
+        if (isTileView && !reorderActions && e.target === e.currentTarget && e.key === "Enter") launchDrawer();
     }}
-    role={reorderActions ? "none" : "button"}
+    tabindex={isTileView && !reorderActions ? 0 : undefined}
+    role={isTileView && !reorderActions ? "button" : "group"}
 >
     <ItemCard
         {id}
