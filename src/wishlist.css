@@ -1,9 +1,9 @@
 [data-theme="wishlist"] {
-    --text-scaling: 1.067;
+    --text-scaling: 1;
     --base-font-color: var(--color-surface-950);
     --base-font-color-dark: var(--color-surface-50);
     --base-font-family:
-        Lato, Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+        -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
         Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --base-font-size: inherit;
     --base-line-height: inherit;
@@ -205,4 +205,201 @@
     --color-surface-contrast-800: var(--color-surface-contrast-light);
     --color-surface-contrast-900: var(--color-surface-contrast-light);
     --color-surface-contrast-950: var(--color-surface-contrast-light);
+}
+
+/* Wallace Tokyo Night Night. Palette: folke/tokyonight.nvim. */
+[data-theme="wishlist"] {
+  --color-surface-50: #c0caf5;
+  --color-surface-100: #a9b1d6;
+  --color-surface-200: #9aa5ce;
+  --color-surface-300: #737aa2;
+  --color-surface-400: #565f89;
+  --color-surface-500: #414868;
+  --color-surface-600: #3b4261;
+  --color-surface-700: #292e42;
+  --color-surface-800: #24283b;
+  --color-surface-900: #16161e;
+  --color-surface-950: #1a1b26;
+  --color-primary-50: color-mix(in srgb, #7aa2f7 68.5%, #c0caf5);
+  --color-primary-contrast-50: #1a1b26;
+  --color-primary-100: color-mix(in srgb, #7aa2f7 72%, #c0caf5);
+  --color-primary-contrast-100: #1a1b26;
+  --color-primary-200: color-mix(in srgb, #7aa2f7 79%, #c0caf5);
+  --color-primary-contrast-200: #1a1b26;
+  --color-primary-300: color-mix(in srgb, #7aa2f7 86%, #c0caf5);
+  --color-primary-contrast-300: #1a1b26;
+  --color-primary-400: color-mix(in srgb, #7aa2f7 93%, #c0caf5);
+  --color-primary-contrast-400: #1a1b26;
+  --color-primary-500: #7aa2f7;
+  --color-primary-contrast-500: #1a1b26;
+  --color-primary-600: color-mix(in srgb, #7aa2f7 85%, #1a1b26);
+  --color-primary-contrast-600: #c0caf5;
+  --color-primary-700: color-mix(in srgb, #7aa2f7 70%, #1a1b26);
+  --color-primary-contrast-700: #c0caf5;
+  --color-primary-800: color-mix(in srgb, #7aa2f7 55%, #1a1b26);
+  --color-primary-contrast-800: #c0caf5;
+  --color-primary-900: color-mix(in srgb, #7aa2f7 40%, #1a1b26);
+  --color-primary-contrast-900: #c0caf5;
+  --color-primary-950: color-mix(in srgb, #7aa2f7 32.5%, #1a1b26);
+  --color-primary-contrast-950: #c0caf5;
+  --color-secondary-50: color-mix(in srgb, #7dcfff 68.5%, #c0caf5);
+  --color-secondary-contrast-50: #1a1b26;
+  --color-secondary-100: color-mix(in srgb, #7dcfff 72%, #c0caf5);
+  --color-secondary-contrast-100: #1a1b26;
+  --color-secondary-200: color-mix(in srgb, #7dcfff 79%, #c0caf5);
+  --color-secondary-contrast-200: #1a1b26;
+  --color-secondary-300: color-mix(in srgb, #7dcfff 86%, #c0caf5);
+  --color-secondary-contrast-300: #1a1b26;
+  --color-secondary-400: color-mix(in srgb, #7dcfff 93%, #c0caf5);
+  --color-secondary-contrast-400: #1a1b26;
+  --color-secondary-500: #7dcfff;
+  --color-secondary-contrast-500: #1a1b26;
+  --color-secondary-600: color-mix(in srgb, #7dcfff 85%, #1a1b26);
+  --color-secondary-contrast-600: #c0caf5;
+  --color-secondary-700: color-mix(in srgb, #7dcfff 70%, #1a1b26);
+  --color-secondary-contrast-700: #c0caf5;
+  --color-secondary-800: color-mix(in srgb, #7dcfff 55%, #1a1b26);
+  --color-secondary-contrast-800: #c0caf5;
+  --color-secondary-900: color-mix(in srgb, #7dcfff 40%, #1a1b26);
+  --color-secondary-contrast-900: #c0caf5;
+  --color-secondary-950: color-mix(in srgb, #7dcfff 32.5%, #1a1b26);
+  --color-secondary-contrast-950: #c0caf5;
+  --color-tertiary-50: color-mix(in srgb, #bb9af7 68.5%, #c0caf5);
+  --color-tertiary-contrast-50: #1a1b26;
+  --color-tertiary-100: color-mix(in srgb, #bb9af7 72%, #c0caf5);
+  --color-tertiary-contrast-100: #1a1b26;
+  --color-tertiary-200: color-mix(in srgb, #bb9af7 79%, #c0caf5);
+  --color-tertiary-contrast-200: #1a1b26;
+  --color-tertiary-300: color-mix(in srgb, #bb9af7 86%, #c0caf5);
+  --color-tertiary-contrast-300: #1a1b26;
+  --color-tertiary-400: color-mix(in srgb, #bb9af7 93%, #c0caf5);
+  --color-tertiary-contrast-400: #1a1b26;
+  --color-tertiary-500: #bb9af7;
+  --color-tertiary-contrast-500: #1a1b26;
+  --color-tertiary-600: color-mix(in srgb, #bb9af7 85%, #1a1b26);
+  --color-tertiary-contrast-600: #c0caf5;
+  --color-tertiary-700: color-mix(in srgb, #bb9af7 70%, #1a1b26);
+  --color-tertiary-contrast-700: #c0caf5;
+  --color-tertiary-800: color-mix(in srgb, #bb9af7 55%, #1a1b26);
+  --color-tertiary-contrast-800: #c0caf5;
+  --color-tertiary-900: color-mix(in srgb, #bb9af7 40%, #1a1b26);
+  --color-tertiary-contrast-900: #c0caf5;
+  --color-tertiary-950: color-mix(in srgb, #bb9af7 32.5%, #1a1b26);
+  --color-tertiary-contrast-950: #c0caf5;
+  --color-success-50: color-mix(in srgb, #9ece6a 68.5%, #c0caf5);
+  --color-success-contrast-50: #1a1b26;
+  --color-success-100: color-mix(in srgb, #9ece6a 72%, #c0caf5);
+  --color-success-contrast-100: #1a1b26;
+  --color-success-200: color-mix(in srgb, #9ece6a 79%, #c0caf5);
+  --color-success-contrast-200: #1a1b26;
+  --color-success-300: color-mix(in srgb, #9ece6a 86%, #c0caf5);
+  --color-success-contrast-300: #1a1b26;
+  --color-success-400: color-mix(in srgb, #9ece6a 93%, #c0caf5);
+  --color-success-contrast-400: #1a1b26;
+  --color-success-500: #9ece6a;
+  --color-success-contrast-500: #1a1b26;
+  --color-success-600: color-mix(in srgb, #9ece6a 85%, #1a1b26);
+  --color-success-contrast-600: #c0caf5;
+  --color-success-700: color-mix(in srgb, #9ece6a 70%, #1a1b26);
+  --color-success-contrast-700: #c0caf5;
+  --color-success-800: color-mix(in srgb, #9ece6a 55%, #1a1b26);
+  --color-success-contrast-800: #c0caf5;
+  --color-success-900: color-mix(in srgb, #9ece6a 40%, #1a1b26);
+  --color-success-contrast-900: #c0caf5;
+  --color-success-950: color-mix(in srgb, #9ece6a 32.5%, #1a1b26);
+  --color-success-contrast-950: #c0caf5;
+  --color-warning-50: color-mix(in srgb, #e0af68 68.5%, #c0caf5);
+  --color-warning-contrast-50: #1a1b26;
+  --color-warning-100: color-mix(in srgb, #e0af68 72%, #c0caf5);
+  --color-warning-contrast-100: #1a1b26;
+  --color-warning-200: color-mix(in srgb, #e0af68 79%, #c0caf5);
+  --color-warning-contrast-200: #1a1b26;
+  --color-warning-300: color-mix(in srgb, #e0af68 86%, #c0caf5);
+  --color-warning-contrast-300: #1a1b26;
+  --color-warning-400: color-mix(in srgb, #e0af68 93%, #c0caf5);
+  --color-warning-contrast-400: #1a1b26;
+  --color-warning-500: #e0af68;
+  --color-warning-contrast-500: #1a1b26;
+  --color-warning-600: color-mix(in srgb, #e0af68 85%, #1a1b26);
+  --color-warning-contrast-600: #c0caf5;
+  --color-warning-700: color-mix(in srgb, #e0af68 70%, #1a1b26);
+  --color-warning-contrast-700: #c0caf5;
+  --color-warning-800: color-mix(in srgb, #e0af68 55%, #1a1b26);
+  --color-warning-contrast-800: #c0caf5;
+  --color-warning-900: color-mix(in srgb, #e0af68 40%, #1a1b26);
+  --color-warning-contrast-900: #c0caf5;
+  --color-warning-950: color-mix(in srgb, #e0af68 32.5%, #1a1b26);
+  --color-warning-contrast-950: #c0caf5;
+  --color-error-50: color-mix(in srgb, #f7768e 68.5%, #c0caf5);
+  --color-error-contrast-50: #1a1b26;
+  --color-error-100: color-mix(in srgb, #f7768e 72%, #c0caf5);
+  --color-error-contrast-100: #1a1b26;
+  --color-error-200: color-mix(in srgb, #f7768e 79%, #c0caf5);
+  --color-error-contrast-200: #1a1b26;
+  --color-error-300: color-mix(in srgb, #f7768e 86%, #c0caf5);
+  --color-error-contrast-300: #1a1b26;
+  --color-error-400: color-mix(in srgb, #f7768e 93%, #c0caf5);
+  --color-error-contrast-400: #1a1b26;
+  --color-error-500: #f7768e;
+  --color-error-contrast-500: #1a1b26;
+  --color-error-600: color-mix(in srgb, #f7768e 85%, #1a1b26);
+  --color-error-contrast-600: #c0caf5;
+  --color-error-700: color-mix(in srgb, #f7768e 70%, #1a1b26);
+  --color-error-contrast-700: #c0caf5;
+  --color-error-800: color-mix(in srgb, #f7768e 55%, #1a1b26);
+  --color-error-contrast-800: #c0caf5;
+  --color-error-900: color-mix(in srgb, #f7768e 40%, #1a1b26);
+  --color-error-contrast-900: #c0caf5;
+  --color-error-950: color-mix(in srgb, #f7768e 32.5%, #1a1b26);
+  --color-error-contrast-950: #c0caf5;
+  --body-background-color-dark: #1a1b26;
+  --base-font-color-dark: #c0caf5;
+  --anchor-font-color-dark: #7aa2f7;
+}
+[data-theme="wishlist"][data-mode="dark"] .subtext,
+[data-theme="wishlist"][data-mode="dark"] .text-subtle { color: #a9b1d6; }
+[data-theme="wishlist"][data-mode="dark"] input::placeholder,
+[data-theme="wishlist"][data-mode="dark"] textarea::placeholder { color: #a9b1d6; opacity: 1; }
+[data-theme="wishlist"][data-mode="dark"] .input,
+[data-theme="wishlist"][data-mode="dark"] .input-group,
+[data-theme="wishlist"][data-mode="dark"] .textarea,
+[data-theme="wishlist"][data-mode="dark"] input[type="checkbox"] { border-color: #737aa2; }
+[data-theme="wishlist"] :focus-visible { outline-color: #7aa2f7; }
+[data-theme="wishlist"] ::selection { background: #3b4261; color: #c0caf5; }
+
+/* Compact list layout. HIG: hierarchy, scalable text and accessible controls. */
+[data-theme="wishlist"] .page-title { font-size: 2rem; line-height: 1.2; font-weight: 650; letter-spacing: -.025em; }
+.compact-wish { display: flex; align-items: center; flex-wrap: wrap; gap: .75rem; padding: .75rem 1rem; min-height: 6rem; }
+.compact-wish-card { border-radius: .75rem; }
+.compact-wish-thumbnail { flex: 0 0 3.5rem; }
+.compact-wish-content { flex: 1 1 10rem; min-width: 0; }
+.compact-wish-title { display: flex; flex-wrap: wrap; gap: .25rem .5rem; align-items: center; font-size: 1rem; font-weight: 600; line-height: 1.4; }
+.compact-wish-title button { display: block; min-height: 2rem; text-align: start; overflow-wrap: anywhere; max-width: 100%; cursor: pointer; }
+.compact-wish-title button:hover { text-decoration: underline; text-underline-offset: .2em; }
+.compact-wish-badge { display: inline-flex; gap: .25rem; align-items: center; font-size: .75rem; font-weight: 500; color: var(--color-primary-500); }
+.compact-wish-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: .125rem 1rem; font-size: .875rem; line-height: 1.5; }
+.compact-wish-meta > * { min-width: 0; max-width: 100%; overflow-wrap: anywhere; }
+.compact-wish-meta > :has([data-testid="notes"]) { flex-basis: 100%; }
+.compact-wish-actions { margin-inline-start: auto; flex-shrink: 0; max-width: 100%; }
+.compact-wish-actions footer { padding: 0; gap: .5rem; }
+.compact-wish-actions .btn-icon { padding: 0 !important; box-sizing: border-box; font-size: 1.125rem; width: 2.25rem; height: 2.25rem; min-width: 2.25rem; min-height: 2.25rem; border-radius: .5rem; }
+[data-theme="wishlist"][data-mode="dark"] .compact-wish-meta { color: #a9b1d6; }
+[data-theme="wishlist"][data-mode="dark"] .compact-wish-actions .preset-filled-error-500 { background: transparent; color: #f7768e; box-shadow: inset 0 0 0 1px #565f89; }
+[data-theme="wishlist"][data-mode="dark"] .compact-wish-actions .preset-filled-error-500:hover { background: #292e42; }
+.wishlist-add-item { min-height: 3rem; }
+.wishlist-view-toggle { min-height: 2.25rem; }
+.wishlist-view-option { min-width: 2.25rem; min-height: 2rem; }
+[data-theme="wishlist"] :focus-visible { outline: 2px solid var(--color-primary-500); outline-offset: 3px; }
+@media (max-width: 767px) {
+    [data-theme="wishlist"] .page-title { font-size: 1.75rem; }
+    .compact-wish { padding: .75rem; gap: .5rem .75rem; }
+    .compact-wish-title button { min-height: 2.75rem; }
+    .compact-wish-actions .btn-icon { width: 2.75rem; height: 2.75rem; min-width: 2.75rem; min-height: 2.75rem; }
+    .wishlist-view-option { min-width: 2.75rem; min-height: 2.75rem; }
+    main .chip, main .btn-xs { min-height: 2.75rem; }
+    input, textarea, select { font-size: 1rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    html { scroll-behavior: auto !important; }
 }

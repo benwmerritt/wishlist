@@ -19,9 +19,9 @@
         { value: "dark", icon: "ion:moon-outline", text: $t("general.dark") }
     ];
 
-    const modeLocalStorage = new LocalStorage<string>("mode", "system");
+    const modeLocalStorage = new LocalStorage<string>("mode", "dark");
 
-    let value = $state("system");
+    let value = $state("dark");
 
     const setPreference = (pref: string) => {
         document.documentElement.setAttribute("data-mode", pref);
@@ -70,7 +70,7 @@
     <script>
         (function initMode() {
             let mode =
-                typeof localStorage !== "undefined" ? JSON.parse(localStorage.getItem("mode")) || "system" : "system";
+                typeof localStorage !== "undefined" ? JSON.parse(localStorage.getItem("mode")) || "dark" : "dark";
             if (mode === "system") {
                 const pref = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
                 document.documentElement.setAttribute("data-mode", pref);

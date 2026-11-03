@@ -281,6 +281,17 @@
         <SortBy />
     </div>
     <div class="flex flex-row flex-wrap items-end gap-2">
+<!-- Add Item button -->
+{#if data.loggedInUser && (data.list.owner.isMe || data.suggestionsEnabled)}
+    <button
+        class="wishlist-add-item preset-filled-primary-500 btn gap-2 rounded-full px-5 shadow-lg print:hidden"
+        aria-label="add item"
+        onclick={() => goto(`${page.url.pathname}/create-item?redirectTo=${page.url.pathname}`, { replaceState: true })}
+    >
+        <iconify-icon class="text-xl" icon="ion:add"></iconify-icon><span>Add item</span>
+    </button>
+{/if}
+
         {#if !reordering}
             <ListViewModeChip {isTileView} />
         {/if}
@@ -316,7 +327,7 @@
         <div
             class={isTileView
                 ? "grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4"
-                : "flex flex-col space-y-4"}
+                : "flex flex-col gap-2"}
             data-testid="approvals-container"
         >
             {#each approvals as item (item.id)}
@@ -351,7 +362,7 @@
     <div
         class={isTileView
             ? "grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4"
-            : "flex flex-col space-y-4"}
+            : "flex flex-col gap-2"}
         data-testid="items-container"
         onconsider={handleDnd}
         onfinalize={handleDnd}
@@ -416,19 +427,6 @@
     <footer class="print:hidden">
         <div class="h-16"></div>
     </footer>
-{/if}
-
-<!-- Add Item button -->
-{#if data.loggedInUser && (data.list.owner.isMe || data.suggestionsEnabled)}
-    <button
-        class="preset-tonal btn btn-icon btn-icon-sm md:btn-icon-base inset-ring-surface-200-800 fixed right-4 z-30 h-16 w-16 p-0! inset-ring md:right-10 md:bottom-10 md:h-20 md:w-20 print:hidden"
-        class:bottom-24={$isInstalled}
-        class:bottom-4={!$isInstalled}
-        aria-label="add item"
-        onclick={() => goto(`${page.url.pathname}/create-item?redirectTo=${page.url.pathname}`, { replaceState: true })}
-    >
-        <iconify-icon class="text-xl md:text-2xl" icon="ion:add"></iconify-icon>
-    </button>
 {/if}
 
 <svelte:head>

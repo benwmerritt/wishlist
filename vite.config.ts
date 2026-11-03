@@ -20,12 +20,14 @@ const config: UserConfig = {
         tailwindcss(),
         sveltekit(),
         SvelteKitPWA({
+            base: "/",
+            scope: "/",
             registerType: "autoUpdate",
             manifest: {
                 name: "Wishlist",
                 short_name: "Wishlist",
                 description: "Christmas wishlist you can share with the whole family.",
-                theme_color: "#423654",
+                theme_color: "#1a1b26",
                 icons: [
                     {
                         src: "/android-chrome-192x192.png",

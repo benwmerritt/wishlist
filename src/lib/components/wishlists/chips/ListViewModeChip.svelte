@@ -24,10 +24,10 @@
 </script>
 
 <SegmentedControl class="z-5" onValueChange={(e) => (selectedValue = e.value)} value={selectedValue}>
-    <SegmentedControl.Control class="h-6.5 gap-0 rounded p-0.5">
+    <SegmentedControl.Control class="wishlist-view-toggle gap-0 rounded-lg p-0.5">
         <SegmentedControl.Indicator class="preset-filled-primary-500 rounded" />
         <SegmentedControl.Item
-            class="w-1"
+            class="wishlist-view-option"
             aria-label={$t("wishes.list-view")}
             title={$t("wishes.list-view")}
             value="list"
@@ -38,7 +38,7 @@
             <SegmentedControl.ItemHiddenInput />
         </SegmentedControl.Item>
         <SegmentedControl.Item
-            class="w-1"
+            class="wishlist-view-option"
             aria-label={$t("wishes.tile-view")}
             title={$t("wishes.tile-view")}
             value="tile"
